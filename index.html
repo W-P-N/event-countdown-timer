@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <form id="countdownForm"> 
+        <fieldset name="Event Details">
+            <legend>Event Details</legend>
+            <label for="eventName">Event Name:</label>
+            <input type="text" name="eventName" id="eventName" placeholder="New Year's Eve"><br>
+            <label for="eventDate">Event Date:</label>
+            <input type="datetime-local" name="eventDate" id="eventDate"><br>
+            <input type="submit" value="Add Timer" id="eventSubmit">
+        </fieldset>
+    </form>
+    <p id="message"></p>
+    <div id="countdownDisplay">
+        <div class="timeBlock">
+            <span id="days">0</span>
+            <span class="timeLabel">Days</span>
+        </div>
+        <div class="timeBlock">
+            <span id="hours">0</span>
+            <span class="timeLabel">Hours</span>
+        </div>
+        <div class="timeBlock">
+            <span id="minutes">0</span>
+            <span class="timeLabel">Minutes</span>
+        </div>
+        <div class="timeBlock">
+            <span id="seconds">0</span>
+            <span class="timeLabel">Seconds</span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
